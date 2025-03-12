@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+</head>
+<body>
+    <header>
+        <div class="container d-flex align-center space-between black-box">
+            <div class="d-flex">
+                <p class="pl-30">Liên hệ: <a href="tel:+84938440167">+84  938 440 167</a></p>
+                <p class="pl-30">Email: <a href="mailto:contact@seowebsite.vn">contact@seowebsite.vn</a></p>
+            </div>
+            <a href="#" class="pr-30"><img src="img/fb.svg"></a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+    </header>
+</body>
+</html>
