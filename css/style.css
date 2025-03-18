@@ -154,9 +154,17 @@
     font-size: 0.8em;
 }
 
+.font-09 {
+    font-size: 0.9em;
+}
+
+.font-13 {
+    font-size: 1.3em;
+}
+
 .font-8 {
     font-size: 8em;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .font-2 {
@@ -763,6 +771,100 @@ li {
     cursor: pointer;
 }
 
+.grey-border {
+    border: 1px solid #E0E0E0;
+}
+
+.member {
+    height: 300px;
+    overflow: hidden;
+}
+
+.member img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.member-img {
+    width: 220px;
+}
+
+.member-detail {
+    position: absolute;
+    bottom: -23px;
+    left: 20px;
+}
+
+.member-div:hover p.font-13 {
+    color: #1F1F1F;
+}
+
+.member-div:hover .member-img {
+    transform: translateX(20px);
+    transition: 1s;
+}
+
+.max-width-500 {
+    max-width: 500px;
+    margin: auto;
+}
+
+.dropdown-mobile {
+    position: relative;
+    display: inline-block;
+    padding: 15px 0 5px;
+}
+
+.dropdown-button {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: block;
+}
+
+.dropdown-button::after {
+    content: url(../img/ddl.svg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#dropdown-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0; /* Initially hidden */
+    transition: max-height 0.3s ease; /* Smooth transition */
+    z-index: 1;
+}
+
+#dropdown-toggle:checked ~ .dropdown-menu {
+    max-height: 500px; /* Enough height to show all options */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
 @media (max-width: 992px) {
     h2 {
         font-size: 2.2em;
@@ -863,6 +965,19 @@ li {
     }
 
     .footer-content .w-50 {
+        width: 100%;
+    }
+
+    #about .w-60,
+    #about .w-40 {
+        width: 100%;
+    }
+
+    #about .gap-60 {
+        gap: 0;
+    }
+
+    #team .w-50 {
         width: 100%;
     }
 }
@@ -967,5 +1082,19 @@ li {
     #backToTop {
         bottom: 30px;
         right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-div {
+        width: 100%;
+    }
+
+    #team .gap-30 {
+        gap: 0;
+    }
+
+    .member-div.mt-50 {
+        margin-top: 20px;
     }
 }

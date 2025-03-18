@@ -79,6 +79,10 @@ header.sticky .black-box {
   padding: 30px;
 }
 
+.p-150 {
+    padding: 150px;
+}
+
 .pb-80 {
   padding-bottom: 80px;
 }
@@ -300,6 +304,10 @@ h2 {
   border-radius: 20px;
 }
 
+.border-radius-30 {
+  border-radius: 30px;
+}
+
 .d-block {
   display: block;
 }
@@ -338,6 +346,43 @@ h2 {
 
 .d-none {
   display: none;
+}
+
+.banner-nav {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  border-radius: 20px 20px 0 0;
+}
+
+.banner-nav::before {
+  content: url(../img/banner-nav-before.svg);
+  position: absolute;
+  left: -20px;
+  bottom: -6px;
+}
+
+.banner-nav::after {
+  content: url(../img/banner-nav-after.svg);
+  position: absolute;
+  right: -20px;
+  bottom: -6px;
+}
+
+.banner-nav a {
+  text-decoration: none;
+  /* Removes default underline */
+  background: linear-gradient(to right, #386BB7, #E24C4A);
+  /* Gradient colors */
+  background-size: 100% 2px;
+  /* Width 100%, thickness 2px */
+  background-position: 0 100%;
+  /* Starts from bottom */
+  background-repeat: no-repeat;
+  padding-bottom: 2px;
+  /* Space between text and underline */
+  transition: background-size 0.3s ease;
+  /* Animation */
 }
 
 @media only screen and (max-width: 1200px) {
@@ -380,6 +425,10 @@ h2 {
 
   .brands img {
     max-width: 90px;
+  }
+
+  .p-150 {
+    padding: 100px;
   }
 }
 
@@ -441,14 +490,11 @@ h2 {
   }
 
   .container {
-      padding: 0 15px;
+    padding: 0 15px;
   }
-}
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next, .text {
-    font-size: 11px
+  .p-150 {
+    padding: 100px 50px;
   }
 }
 
