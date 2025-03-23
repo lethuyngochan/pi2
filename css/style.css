@@ -47,8 +47,16 @@
     padding-bottom: 50px;
 }
 
+.pl-15 {
+    padding-left: 15px;
+}
+
 .pl-40 {
     padding-left: 40px;
+}
+
+.pr-15 {
+    padding-right: 15px;
 }
 
 .pr-40 {
@@ -61,6 +69,10 @@
 
 .pt-40 {
     padding-top: 40px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
 }
 
 .mb-15 {
@@ -101,6 +113,10 @@
 
 .mt-100 {
     margin-top: 100px;
+}
+
+.border-radius-10 {
+    border-radius: 10px;
 }
 
 .border-radius-25 {
@@ -206,6 +222,10 @@
 
 .w-40 {
     width: 40%;
+}
+
+.w-45 {
+    width: 45%;
 }
 
 .w-50 {
@@ -717,7 +737,8 @@ li {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     background-color: #f14f44;
     border: none;
     border-radius: 25px;
@@ -734,7 +755,8 @@ li {
 }
 
 #backToTop.show {
-    display: block; /* Show when scrolled down */
+    display: block;
+    /* Show when scrolled down */
     opacity: 1;
 }
 
@@ -832,7 +854,8 @@ li {
 }
 
 #dropdown-toggle {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
 
 .dropdown-menu {
@@ -841,13 +864,16 @@ li {
     padding: 10px 0 0;
     border-radius: 5px;
     overflow: hidden;
-    max-height: 0; /* Initially hidden */
-    transition: max-height 0.3s ease; /* Smooth transition */
+    max-height: 0;
+    /* Initially hidden */
+    transition: max-height 0.3s ease;
+    /* Smooth transition */
     z-index: 1;
 }
 
-#dropdown-toggle:checked ~ .dropdown-menu {
-    max-height: 500px; /* Enough height to show all options */
+#dropdown-toggle:checked~.dropdown-menu {
+    max-height: 500px;
+    /* Enough height to show all options */
 }
 
 .dropdown-menu li {
@@ -863,6 +889,65 @@ li {
     color: #333;
     font-size: 14px;
     display: block;
+}
+
+/* Style the tab */
+.tab {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.3;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+/* Create an active/current "tab button" class */
+.tab button:hover,
+.tab button.active {
+    opacity: 1;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+}
+
+.web123 {
+    background: url(../img/web123.webp) center;
+    background-size: cover;
+}
+
+.white-border {
+    border: 1px solid white;
+}
+
+.red-bg {
+    background: #E34D4B;
+}
+
+@media (max-width: 1200px) {
+    #services-content.gap-60 {
+        gap: 30px;
+    }
+
+    #services-content .gap-60 {
+        gap: 10%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1083,6 +1168,14 @@ li {
         bottom: 30px;
         right: 30px;
     }
+    
+    #services-content .w-30 {
+        display: none;
+    }
+
+    #services-content .tabcontent {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1096,5 +1189,14 @@ li {
 
     .member-div.mt-50 {
         margin-top: 20px;
+    }
+
+    .tabcontent .p-50 {
+        padding: 30px;
+    }
+
+    .tabcontent .w-45 {
+        width: 100%;
+        margin: 0 0 30px;
     }
 }
