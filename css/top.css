@@ -80,7 +80,7 @@ header.sticky .black-box {
 }
 
 .p-150 {
-    padding: 150px;
+  padding: 150px;
 }
 
 .pb-80 {
@@ -333,12 +333,12 @@ h2 {
   gap: 2.6%;
 }
 
-.services > div {
+.services>div {
   margin: 15px 0;
   transition: 0.5s;
 }
 
-.services > div:hover {
+.services>div:hover {
   color: #1F1F1F;
   background: #E7E8E8;
   cursor: pointer;
@@ -495,6 +495,20 @@ h2 {
 
   .p-150 {
     padding: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #case-study .p-150 {
+    padding: 100px 30px;
+  }
+
+  #case-study h1 {
+    font-size: 2.5em;
+  }
+
+  #case-study .banner-nav {
+    padding: 15px;
   }
 }
 

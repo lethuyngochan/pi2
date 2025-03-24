@@ -39,6 +39,10 @@
     padding: 50px;
 }
 
+.pb-5 {
+    padding-bottom: 5px;
+}
+
 .pb-10 {
     padding-bottom: 10px;
 }
@@ -63,6 +67,10 @@
     padding-right: 40px;
 }
 
+.pt-5 {
+    padding-top: 5px;
+}
+
 .pt-10 {
     padding-top: 10px;
 }
@@ -75,6 +83,10 @@
     margin-bottom: 0px;
 }
 
+.mb-5 {
+    margin-bottom: 5px;
+}
+
 .mb-15 {
     margin-bottom: 15px;
 }
@@ -85,6 +97,10 @@
 
 .ml-30 {
     margin-left: 30px;
+}
+
+.mr-5 {
+    margin-right: 5px;
 }
 
 .mr-15 {
@@ -188,6 +204,11 @@
     line-height: 1.5;
 }
 
+.font-25 {
+    font-size: 2.5em;
+    line-height: 1;
+}
+
 .gradient-stroke-text {
     background: linear-gradient(90deg, #386BB7, #E24C4A);
     background-size: 200% 200%;
@@ -228,8 +249,16 @@
     width: 45%;
 }
 
+.w-48 {
+    width: 48%;
+}
+
 .w-50 {
     width: 50%;
+}
+
+.w-57 {
+    width: 57%;
 }
 
 .w-70 {
@@ -356,6 +385,10 @@
     font-size: 1em;
     color: #666;
     line-height: 1.6;
+}
+
+.gap-3p {
+    gap: 3%;
 }
 
 .gap-30 {
@@ -827,6 +860,10 @@ li {
     transition: 1s;
 }
 
+.max-width-100 {
+    max-width: 100%;
+}
+
 .max-width-500 {
     max-width: 500px;
     margin: auto;
@@ -938,6 +975,41 @@ li {
 
 .red-bg {
     background: #E34D4B;
+}
+
+.case-studies-img {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.case-studies-img .white-bg {
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.case-studies-img .white-bg::after {
+    content: url(../img/date-after.svg);
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+}
+
+#case-studies-section a:hover {
+    color: white;
+}
+
+#case-studies-section a:hover .sentence {
+    text-decoration: underline;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.white-opacity-bg {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 1200px) {
@@ -1065,6 +1137,11 @@ li {
     #team .w-50 {
         width: 100%;
     }
+
+    #case-studies-section .w-40,
+    #case-studies-section .w-57 {
+        width: 48%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1174,6 +1251,19 @@ li {
     }
 
     #services-content .tabcontent {
+        width: 100%;
+    }
+
+    #case-studies-section .w-40,
+    #case-studies-section .w-57 {
+        width: 100%;
+    }
+
+    #case-studies-section {
+        gap: 0;
+    }
+
+    #services-content .w-70 {
         width: 100%;
     }
 }
