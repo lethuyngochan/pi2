@@ -1215,6 +1215,10 @@ li {
         width: 80%;
     }
 
+    .faq-content .qa .w-60 {
+        width: 95%;
+    }
+
     .qa .w-10 {
         width: 5%;
     }
@@ -1245,7 +1249,7 @@ li {
         bottom: 30px;
         right: 30px;
     }
-    
+
     #services-content .w-30 {
         display: none;
     }

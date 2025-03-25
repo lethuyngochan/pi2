@@ -341,7 +341,6 @@ h2 {
 .services>div:hover {
   color: #1F1F1F;
   background: #E7E8E8;
-  cursor: pointer;
 }
 
 .d-none {
