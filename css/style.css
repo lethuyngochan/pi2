@@ -168,12 +168,14 @@
 }
 
 .secondary-btn {
-    padding: 20px;
+    padding: 10px 20px;
     border: 1px solid white;
     border-radius: 40px;
     color: white;
     margin: 0 20px;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
 }
 
 .secondary-btn:hover {
@@ -1016,6 +1018,15 @@ li {
     word-break: break-all;
 }
 
+#web123-home-banner {
+    background: url(../img/Group-18433.webp) center right; 
+    background-size: cover;
+}
+
+.d-sm-block {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     #services-content.gap-60 {
         gap: 30px;
@@ -1283,6 +1294,23 @@ li {
 
     #services-content .w-70 {
         width: 100%;
+    }
+
+    #web123-home-banner .w-30,
+    #web123-home-banner .w-40 {
+        width: 100%;
+    }
+
+    #web123-home-banner .justify-center {
+        justify-content: flex-start;
+    }
+
+    #web123-home-banner .justify-end {
+        display: none;
+    }
+
+    .d-sm-block {
+        display: block;
     }
 }
 
