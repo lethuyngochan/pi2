@@ -1012,6 +1012,10 @@ li {
     background: rgba(255, 255, 255, 0.1);
 }
 
+.word-break {
+    word-break: break-all;
+}
+
 @media (max-width: 1200px) {
     #services-content.gap-60 {
         gap: 30px;
@@ -1250,12 +1254,22 @@ li {
         right: 30px;
     }
 
-    #services-content .w-30 {
+    #services-content .tab {
         display: none;
     }
 
-    #services-content .tabcontent {
+    #services-content {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #services-content .tabcontent,
+    #services-content .w-30 {
         width: 100%;
+    }
+
+    .web123.mt-30 {
+        margin-top: 0;
     }
 
     #case-studies-section .w-40,
